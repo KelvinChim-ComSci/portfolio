@@ -29,10 +29,10 @@ export default function Layout({ children }: any) {
           <nav>
             <ul>
               {menuItems.map(({ href, title }) => (
-                <li className="m-2" key={title}>
+                <li className="m-2 ml-0" key={title}>
                   <Link href={href}>
                     <a
-                      className={`flex px-8 py-2 rounded hover:bg-gradient-to-r gray-400 cursor-pointer ${
+                      className={`flex px-8 py-2 hover:bg-gradient-to-r gray-400 cursor-pointer ${
                         router.asPath === href &&
                         "bg-gradient-to-r from-gray-400 to-white text-white"
                       }`}
