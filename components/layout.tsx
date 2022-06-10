@@ -25,15 +25,16 @@ export default function Layout({ children }: any) {
   return (
     <div className="min-h-screen flex flex-col">
       <div className="flex flex-col md:flex-row flex-1">
-        <aside className="bg-gray-100 w-full md:w-60">
+        <aside className="bg-gradient-to-r from-gray-200 w-full md:w-80">
           <nav>
             <ul>
               {menuItems.map(({ href, title }) => (
                 <li className="m-2" key={title}>
                   <Link href={href}>
                     <a
-                      className={`flex p-2 bg-gray-200 rounded hover:bg-gray-400 cursor-pointer ${
-                        router.asPath === href && "bg-gray-500 text-white"
+                      className={`flex px-8 py-2 rounded hover:bg-gradient-to-r gray-400 cursor-pointer ${
+                        router.asPath === href &&
+                        "bg-gradient-to-r from-gray-400 to-white text-white"
                       }`}
                     >
                       {title}
