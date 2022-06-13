@@ -47,6 +47,7 @@ export default function Layout({ children }: any) {
         </aside>
         <main className="flex-1">{children}</main>
       </div>
+      <footer className="py-2 bg-gray-300">Copyright somthing</footer>
     </div>
   );
 }
