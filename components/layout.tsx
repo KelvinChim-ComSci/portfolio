@@ -62,7 +62,7 @@ export default function Layout({ children }: any) {
                 >
                   <Link href={href}>
                     <a
-                      className={`flex px-8 py-2 font-semibold cursor-pointer `}
+                      className={`select-none flex px-8 py-2 font-semibold cursor-pointer `}
                     >
                       {title}
                     </a>
@@ -74,7 +74,9 @@ export default function Layout({ children }: any) {
         </aside>
         <main className="flex-1 bg-slate-50">{children}</main>
       </div>
-      <footer className="py-2 bg-gray-300/50">Copyright somthing</footer>
+      <footer className="select-none p-2 bg-gray-300/50 text-right text-sm text-neutral-400">
+        &copy; Created by Kelvin Chim. Last Updated at: 14/6/2022.
+      </footer>
     </div>
   );
 }
