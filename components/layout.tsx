@@ -48,21 +48,21 @@ export default function Layout({ children }: any) {
   return (
     <div className="min-h-screen flex flex-col">
       <div className="flex flex-col md:flex-row flex-1">
-        <aside className="bg-slate-200 opacity-50 w-full md:w-80">
+        <aside className="bg-neutral-200 opacity-50 w-full md:w-80">
           <nav className="mt-24">
-            <div id="overlay" className="-z-10 absolute bg-slate-400"></div>
+            <div id="overlay" className="-z-10 absolute bg-neutral-300"></div>
             <ul>
               {menuItems.map(({ href, title }) => (
                 <li
-                  className={`p-2 pl-0 ${
+                  className={`p-2 pl-0 font-semibold ${
                     router.asPath === href &&
-                    "bg-gradient-to-r from-gray-400 to-slate-300 text-white"
+                    "bg-gradient-to-r from-neutral-400 to-neutral-300"
                   }`}
                   key={title}
                 >
                   <Link href={href}>
                     <a
-                      className={`flex px-8 py-2 hover:bg-gradient-to-r gray-400 cursor-pointer `}
+                      className={`flex px-8 py-2 font-semibold cursor-pointer `}
                     >
                       {title}
                     </a>
