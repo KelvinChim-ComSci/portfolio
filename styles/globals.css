@@ -1,3 +1,18 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#overlay {
+    transition: 100ms ease top, height, opacity;
+    opacity: 0;
+}
+
+#overlay.active {
+    opacity: 0.75;
+}
+
