@@ -8,4 +8,3 @@ Please look forward to it!
 ### Timeline<hr>
 First initialized project on: 8th June 2022.\
 Publicized on: 10th June 2022.\
-Last Updated: 10th June 2022.
