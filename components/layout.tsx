@@ -8,6 +8,10 @@ export default function Layout({ children }: any) {
   const { theme, setTheme } = useTheme();
   const [deviceSize, changeDeviceSize] = useState(0);
   const smBreakpoint = 640;
+  const gradientDirection =
+    deviceSize < smBreakpoint
+      ? "bg-gradient-to-t from-neutral-500 to-neutral-300"
+      : "bg-gradient-to-r from-neutral-500 to-neutral-300";
   const menuItems: { href: string; title: string; icon: any }[] = [
     {
       href: "/",
@@ -117,8 +121,7 @@ export default function Layout({ children }: any) {
               {menuItems.map(({ href, title, icon }) => (
                 <li
                   className={`p-2 pl-0 font-semibold float-left sm:float-none ${
-                    router.asPath === href &&
-                    "bg-gradient-to-r from-neutral-400 to-neutral-300"
+                    router.asPath === href && gradientDirection
                   }`}
                   key={title}
                 >
