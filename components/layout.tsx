@@ -157,7 +157,7 @@ export default function Layout({ children }: any) {
           </button>
         </div>
         <div className="text-right text-sm">
-          &copy; Created by Kelvin Chim. Last Updated at: 15/6/2022.
+          &copy; Created by Kelvin Chim. Last Updated at: 20/6/2022.
         </div>
       </footer>
     </div>
