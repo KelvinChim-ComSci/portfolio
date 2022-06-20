@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 export default function Layout({ children }: any) {
   const router = useRouter();
   const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
   const [deviceSize, changeDeviceSize] = useState(-1);
   const smBreakpoint = 640;
   const gradientDirection =
@@ -64,6 +65,7 @@ export default function Layout({ children }: any) {
   ];
 
   useEffect(() => {
+    setMounted(true);
     const overlay: HTMLElement = document.getElementById("overlay")!;
     const navItems: NodeListOf<Element> =
       document.querySelectorAll("nav ul li")!;
@@ -146,8 +148,12 @@ export default function Layout({ children }: any) {
       </div>
       <footer className="flex justify-between items-center select-none p-2 bg-zinc-400 dark:bg-slate-700 text-black text-opacity-50 dark:text-white dark:text-opacity-50">
         <div className="flex items-center">
-          <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-            {theme === "dark" ? sun : moon}
+          <button
+            onClick={() => {
+              setTheme(theme === "dark" ? "light" : "dark");
+            }}
+          >
+            {!mounted ? " " : theme === "dark" ? sun : moon}
           </button>
         </div>
         <div className="text-right text-sm">
