@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 export default function Layout({ children }: any) {
   const router = useRouter();
   const { theme, setTheme } = useTheme();
-  const [deviceSize, changeDeviceSize] = useState(0);
+  const [deviceSize, changeDeviceSize] = useState(-1);
   const smBreakpoint = 640;
   const gradientDirection =
     deviceSize < smBreakpoint
@@ -86,6 +86,7 @@ export default function Layout({ children }: any) {
   }, []);
 
   useEffect(() => {
+    if (deviceSize === -1) changeDeviceSize(window.innerWidth);
     const resizeWidth = () => changeDeviceSize(window.innerWidth);
     window.addEventListener("resize", resizeWidth);
 
@@ -129,7 +130,11 @@ export default function Layout({ children }: any) {
                     <a
                       className={`select-none flex px-8 py-2 font-semibold text-black dark:text-white cursor-pointer `}
                     >
-                      {deviceSize < smBreakpoint ? icon : title}
+                      {deviceSize === -1
+                        ? "..."
+                        : deviceSize < smBreakpoint
+                        ? icon
+                        : title}
                     </a>
                   </Link>
                 </li>
