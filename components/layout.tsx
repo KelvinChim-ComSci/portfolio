@@ -114,16 +114,16 @@ export default function Layout({ children }: any) {
   return (
     <div className="min-h-screen flex flex-col">
       <div className="flex flex-col-reverse sm:flex-row flex-1">
-        <aside className="bg-zinc-300 dark:bg-slate-800 opacity-50 w-full sm:w-80">
+        <aside className="bg-zinc-300 dark:bg-slate-900 opacity-100 sm:opacity-50 w-full sm:w-80 sticky bottom-0">
           <nav className="mt-0 sm:mt-24">
             <div
               id="overlay"
-              className="-z-10 absolute bg-neutral-400 dark:bg-neutral-300 pc"
+              className="-z-10 absolute bg-neutral-400 dark:bg-neutral-300 pc hidden sm:block"
             ></div>
             <ul className="flex justify-center sm:inline">
               {menuItems.map(({ href, title, icon }) => (
                 <li
-                  className={`p-2 pl-0 font-semibold float-left sm:float-none ${
+                  className={`p-2 sm:pl-0 font-semibold float-left sm:float-none ${
                     router.asPath === href && gradientDirection
                   }`}
                   key={title}
