@@ -91,7 +91,7 @@ export default function Layout({ children }: any) {
       <footer className="flex justify-between items-center select-none p-2 bg-zinc-400 dark:bg-slate-700 text-black text-opacity-50 dark:text-white dark:text-opacity-50">
         <DarkModeToggle />
         <div className="text-right text-sm">
-          &copy; Created by Kelvin Chim. Last Updated at: 20/6/2022.
+          &copy; Created by Kelvin Chim. Last Updated at: 21/6/2022.
         </div>
       </footer>
     </div>
