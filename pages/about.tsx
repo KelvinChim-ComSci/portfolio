@@ -11,6 +11,17 @@ export default function About() {
         the gaming industry and develop memorable games in the future.
       </div>
       <div id="relatedFields" className="flex grow">
+        Previous Experience:
+        <ul>
+          <li>
+            Major in Mathematics, Computation and Applied Mathematics Stream
+            <br />
+            Minor in Computer Science
+            <br />
+            The Chinese University of Hong Kong
+          </li>
+          <li></li>
+        </ul>
         <Link href="https://github.com/KelvinChim-ComSci/">
           <AiFillGithub size={"2rem"} className="cursor-pointer" />
         </Link>
