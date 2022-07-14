@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { menuItems } from "./menuItems";
+import { menuItems } from "../database/menuItems";
 import DarkModeToggle from "./darkModeToggle";
 
 export default function Layout({ children }: any) {
