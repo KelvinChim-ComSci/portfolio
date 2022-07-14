@@ -5,11 +5,9 @@ export default function Work() {
   return (
     <div className="flex h-full flex-col p-6">
       <h1 className="text-4xl mb-5 font-bold">Works:</h1>
-      <div className="text-l">
-        {workItems.map((workItem) => (
-          <WorkForm workItem={workItem}></WorkForm>
-        ))}
-      </div>
+      {workItems.map((workItem) => (
+        <WorkForm workItem={workItem}></WorkForm>
+      ))}
     </div>
   );
 }
