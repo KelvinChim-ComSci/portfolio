@@ -76,7 +76,9 @@ export default function Layout({ children }: any) {
             </ul>
           </nav>
         </aside>
-        <main className="flex-1 bg-zinc-50 dark:bg-slate-800">{children}</main>
+        <main className="flex-1 bg-zinc-50 dark:bg-slate-800 sm:pr-80">
+          {children}
+        </main>
       </div>
       <footer className="flex justify-between items-center select-none p-2 bg-zinc-400 dark:bg-slate-700 text-black text-opacity-50 dark:text-white dark:text-opacity-50">
         <DarkModeToggle />
