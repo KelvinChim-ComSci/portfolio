@@ -76,7 +76,7 @@ export default function Layout({ children }: any) {
             </ul>
           </nav>
         </aside>
-        <main className="flex-1 bg-zinc-50 dark:bg-slate-800 sm:pr-80">
+        <main className="flex-1 bg-zinc-50 dark:bg-slate-800 sm:pr-80 sm:pl-40">
           {children}
         </main>
       </div>
