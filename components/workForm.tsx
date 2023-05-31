@@ -31,7 +31,7 @@ export default function WorkForm(props: Props): JSX.Element {
         <div className="absolute basis-1/5 bottom-0 left-0">
           <div>
             Check out my work here:&nbsp;
-            <a href={link.href}>
+            <a href={link?.href ?? undefined}>
               <span className="cursor-pointer text-sky-600">{title}</span>
             </a>
           </div>
