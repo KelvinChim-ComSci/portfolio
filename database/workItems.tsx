@@ -1,6 +1,6 @@
 export interface work {
   title: string;
-  link?: URL;
+  link: URL;
   description: string;
   img?: string;
 }
@@ -15,6 +15,7 @@ export const workItems: work[] = [
   },
   {
     title: "Work From Previous Job (Inspekly Portal)",
+    link: new URL("https://portal.inspekly.com"),
     description: `The Web Portal for the previous Job I worked on, created using React.JS and Typescript. 
     It also utilizes Firebase Messaging, AWS Email System and real-time updating components for clients.`,
     img: "prevJobExample",

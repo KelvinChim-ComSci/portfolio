@@ -60,30 +60,29 @@ export default function Layout({ children }: any) {
                   }`}
                   key={title}
                 >
-                  <Link href={href}>
-                    <a
-                      className={`select-none flex px-8 py-2 font-semibold text-black dark:text-white cursor-pointer `}
-                    >
-                      {deviceSize === -1
-                        ? "..."
-                        : deviceSize < smBreakpoint
-                        ? icon
-                        : title}
-                    </a>
+                  <Link
+                    href={href}
+                    className={`select-none flex px-8 py-2 font-semibold text-black dark:text-white cursor-pointer `}
+                  >
+                    {deviceSize === -1
+                      ? "..."
+                      : deviceSize < smBreakpoint
+                      ? icon
+                      : title}
                   </Link>
                 </li>
               ))}
             </ul>
           </nav>
         </aside>
-        <main className="flex-1 bg-zinc-50 dark:bg-slate-800 sm:pr-10 sm:pl-40">
+        <main className="flex-1 bg-zinc-50 dark:bg-slate-800 sm:pr-10 sm:pl-10">
           {children}
         </main>
       </div>
       <footer className="flex justify-between items-center select-none p-2 bg-zinc-400 dark:bg-slate-700 text-black text-opacity-50 dark:text-white dark:text-opacity-50">
         <DarkModeToggle />
         <div className="text-right text-sm">
-          &copy; Created by Kelvin Chim. Last Updated on: 14/7/2022.
+          &copy; Created by Kelvin Chim. Last Updated on: 13/6/2023.
         </div>
       </footer>
     </div>
