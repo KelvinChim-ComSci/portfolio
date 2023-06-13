@@ -13,7 +13,7 @@ export default function Home() {
             style={{ left: "20%", top: "40%" }}
           >
             <div className="font-bold text-xl text-slate-400">
-              Hello there! I'm
+              Hello there! I&apos;m
             </div>
             <div className="font-bold text-6xl text-black dark:text-white">
               Kelvin Chim
@@ -22,7 +22,7 @@ export default function Home() {
               Based in Hong Kong,
             </div>
             <div className="font-bold text-xl text-slate-400">
-              I'm a software engineer.
+              I&apos;m a software engineer.
             </div>
           </div>
           <div className="relative md:rounded-full w-full h-full md:w-1/2 overflow-hidden ">

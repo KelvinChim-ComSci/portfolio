@@ -41,7 +41,7 @@ export default function Layout({ children }: any) {
     window.addEventListener("resize", resizeWidth);
 
     return () => window.removeEventListener("resize", resizeWidth);
-  });
+  }, [deviceSize]);
 
   return (
     <div className="min-h-screen flex flex-col">

@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ThemeProvider attribute="class">
       <Layout>
         <Head>
-          <title>Kelvin Chim's Personal Website</title>
+          <title>Kelvin Chim&apos;s Personal Website</title>
         </Head>
         <Component {...pageProps} />
       </Layout>

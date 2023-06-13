@@ -9,10 +9,10 @@ export default function About() {
         style={{ height: "80vh" }}
       >
         <div id="backgroundInfo" className="w-full">
-          I'm an enthusiastic software developer just graduated from University.
-          As I delve into anything I'm interested in, I optimize most aspect
-          related to it. Aiming high on creating something meticulous, I look
-          forward to a day I can create perfect products.
+          I&apos;m an enthusiastic software developer just graduated from
+          University. As I delve into anything I&apos;m interested in, I
+          optimize most aspect related to it. Aiming high on creating something
+          meticulous, I look forward to a day I can create perfect products.
           <ol className="relative border-l border-gray-200 dark:border-gray-700 mt-6">
             <li className="mb-10 ml-4">
               <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
