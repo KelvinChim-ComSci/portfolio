@@ -46,7 +46,7 @@ export default function Layout({ children }: any) {
   return (
     <div className="min-h-screen flex flex-col">
       <div className="flex flex-col-reverse sm:flex-row flex-1">
-        <aside className="bg-zinc-300 dark:bg-slate-900 opacity-100 sm:opacity-50 w-full sm:w-80 sticky bottom-0">
+        <aside className="bg-zinc-300 dark:bg-slate-900 opacity-100 sm:opacity-75 w-full sm:w-80 sticky bottom-0">
           <nav className="mt-0 sm:mt-24">
             <div
               id="overlay"
