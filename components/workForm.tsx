@@ -12,12 +12,7 @@ export default function WorkForm(props: Props): JSX.Element {
 
   function ImageComponent(image: string) {
     return (
-      <Image
-        src={`/static/images/${image}.png`}
-        fill
-        alt={title}
-        style={{ objectFit: "contain" }}
-      />
+      <Image src={image} fill alt={title} style={{ objectFit: "contain" }} />
     );
   }
   return (

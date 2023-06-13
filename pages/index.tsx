@@ -1,4 +1,5 @@
 import Image from "next/image";
+import picture from "public/static/images/personalPicture4.jpeg";
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
           <div className="relative md:rounded-full w-full h-full md:w-1/2 overflow-hidden ">
             <Image
               fill
-              src="/static/images/personalPicture4.jpeg"
+              src={picture}
               alt="Me back when I graduated"
               style={{ objectFit: "cover" }}
             />
